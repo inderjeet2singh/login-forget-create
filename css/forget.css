@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter Tight', sans-serif;
+}
+.clp{
+  height: 100%;
+  width:100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 70% 100%, 30% 100%, 0 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 70% 100%, 30% 100%, 0 50%);
+
+
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 81% 100%, 19% 100%, 0 50%);
+clip-path: polygon(0 0, 100% 0, 100% 50%, 81% 100%, 19% 100%, 0 50%); */
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 71%, 65% 100%, 33% 100%, 0 73%);
+  clip-path: polygon(0 0, 100% 0, 100% 71%, 65% 100%, 33% 100%, 0 73%); */
+}
+.blar
+{
+  color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  /* background: #005dea; */
+  position: absolute;
+  backdrop-filter: blur(100px);
+  /* top: 0; */
+  z-index: -1;
+}
+.back{
+  color: azure;
+  position: absolute;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+}
+.back>a img{
+  /* border:1px solid black ; */
+  filter: invert(1);
+  margin-right: 6px;
+} 
+.back a{
+  font-weight: 300;
+  margin: 15px;
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 13px;
+
+  /* border:1px solid rgb(255, 255, 255) ; */
+}
+
+.back a:hover{
+  opacity: 0.5;
+  transition-duration:0.2s ;
+  /* font-weight: 200; */
+}
+
+.back>a p{
+  margin-top: 1px;
+  /* border:1px solid rgb(255, 255, 255) ; */
+
+}
+body{
+  background:  rgb(132, 176, 235);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  /* z-index: 2; */
+  z-index: -1;
+  
+}
+.container{
+  /* border: 1px solid black; */
+  /* width: 50vw; */
+}
+.inner-container{
+  /* backdrop-filter; */
+  /* background-color: blue; */
+  /* border: 1px solid rgb(255, 255, 255);  */
+  padding: 40px 60px;
+  border-radius: 15px;
+  background-color: #141818;
+  
+}
+/* .into-container{
+    border: 1px solid black;
+    width: 240px;
+} */
+.txt{
+  text-align: left;
+  cursor: default;
+}
+.tittle{
+    font-size: 20px;
+    color: white;
+    margin: 13px 0;
+}
+.desc{
+    /* width: inherit; */
+    font-weight: 200;
+    color: white;
+    opacity: 0.5;
+    font-size: 11px;
+    margin: 13px 0;
+}
+.icn{
+    /* border: 1px solid black; */
+    position: absolute;
+    margin: 6px 12px;
+    padding: 0;
+    /* margin-right: ; */
+    color: aliceblue;
+    /* filter: brightness(10px); */
+    filter: invert(1);
+    /* top: 4px; */
+}
+.fImg{
+    /* border: 1px solid white; */
+    text-align: center;
+}
+.name>input{
+    color: white;
+    background: transparent;
+    padding: 10px 45px;
+    max-width: 237px;
+    padding-right: 15px;
+    outline: none;  
+    border: 1px solid #313d3f;
+    border-radius: 5px;
+}
+.name>input:focus{
+    border: 1px solid rgba(51, 51, 238, 0.829);
+
+}
+
+.pswd>input{
+  z-index: 1;
+  padding-right: 15px;
+  width: 175px;
+  position: relative;
+  margin: 10px 0;
+  box-sizing: content-box;
+}
+#cpasword{
+    margin-top: 4px;
+}
+#confirmpasword{
+    margin: 10px 0;
+
+}
+.pswd>img{
+    margin: 16px 12px;
+}
+#cIcon{
+    margin-top: 10px;
+}
+.pswd>input::-ms-reveal{
+  /* display: none; */
+  color: bisque;
+  filter: invert(1);
+  border: 1px solid black;
+  width: 20px;
+  visibility: hidden;
+  padding-right: 12px;
+
+}
+
+
+
+        /* .check {
+            display: block;
+            position: relative;
+            padding-left: 10px;
+            margin-bottom: 25px;
+            cursor: pointer;
+            color: white;
+            font-weight: 300;
+            font-size: 13px;
+        } */
+  /* Hiding the initial checkbox */
+        /* input[type=checkbox] {
+            visibility: hidden;
+        } */
+  /* Creating a custom checkbox based on demand */
+        /* .new-box {
+            position: absolute;
+            top: 0.8px;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            border: 1px solid rgba(94, 88, 88, 0.712);
+            border-radius: 3px;
+            background: transparent;
+        } */
+  /* Specify the backgro    und color to be shown when checkbox is checked */
+        /* .check input:checked ~ .new-box {
+            background-color: rgba(34, 34, 243, 0.884);
+            border: 1px solid rgba(34, 34, 243, 0.884);
+        } */
+  /* Checkmark to be shown in checkbox */
+  /* It is not be shown when not checked */
+        /* .new-box:after {
+            content: "";
+            position: absolute;
+            display: none;
+        } */
+  /* Display checkmark when checked */
+        /* .check input:checked ~ .new-box:after {
+            display: block;
+        } */
+  /* Styling the checkmark using webkit */
+  /* Rotated the rectangle by 45 degree and 
+  showing only two border to make it look
+  like a tickmark */
+        /* .check .new-box:after {
+            left: 3.5px;
+            bottom: 3px;
+            width: 3.4px;
+            height: 8px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(47deg);
+            -ms-transform: rotate(47deg);
+            transform: rotate(47deg);
+        } */
+
+  .btn{
+    /* border:1px solid black; */
+    /* text-align: center; */
+  }
+  .btn>input{
+    border: none;
+    background-color: #0063f3;
+    color: white;
+    font-weight: 200;
+    width: 100%;
+    border-radius:8px ;
+    padding: 15px;
+    outline: none;
+  }
+
+
+  .inner2-container{
+    width: inherit;
+    text-align: center;
+  }
+  .signup{
+    margin-top: 35px;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .signup>p{
+    cursor: default;
+    color: white;
+    opacity: 0.5;
+    font-weight: 200;
+  }
+  .signup>a{
+    text-decoration: none;
+    margin-left: 3px;
+    font-weight: 600;
+    color: #005dea;
+  }
+/* .forget>a{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 13px;
+    color: #005dea;
+} */
+
+.pswd>span{
+  z-index: 2;
+  color: white;
+  font-size: 12px;
+  cursor: default;
+  position: absolute;
+  margin-left: -45px;
+  margin-top: 22px;
+  background-color: #141818;
+  /* border: 0.2px solid white; */
+  /* left: 10px; */
+}
+#conShowLink{
+    margin-top: 16px;
+}
+/* #cpassword{
+    
+    padding-right: px;
+} */
+#conShowLink,#newShowLink{
+  visibility: hidden;
+  /* background-color: aliceblue; */
+}
+
+#cpasword:focus + #conShowLink,#npasword:focus + #newShowLink{
+  visibility: visible;
+  /* padding-right: 10px; */
+}
+/* #newShowLink{
+    visibility: hidden;
+} */
+/* #npasword:focus + #newShowLink{
+  visibility: visible;
+} */
+
+
+.pswd>input:focus .pswd>input:hover + #showLink{
+  /* visibility: visible; */
+}
+#showLink:hover{
+  /* visibility: visible;
+  !important; */
+}
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover{
+  -webkit-box-shadow:0 0 0 1000px #141818 inset;
+  -webkit-text-fill-color: white;
+}
