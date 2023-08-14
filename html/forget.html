@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/signin.css"> -->
+    <link rel="stylesheet" href="../css/forget.css">
+    <title>Reset password</title>
+
+</head>
+<body>
+    <!-- <img src="/log.png" alt="">
+    <img src="/AUTH Login Register screen for Phylum (1).aco" alt=""> -->
+    <!-- <div class="upper-container"> -->
+        <div class="clp"></div>
+        <div class="blar"></div>
+        <div class="back">
+            <a href="">
+                <img src="../img/arrow_back_FILL0_wght200_GRAD200_opsz24.svg" alt="" height="18px" width="18px">
+                <p>Back To Main</p>
+            </a>
+        </div>
+        <div class="container">
+            <div class="inner-container">
+                <!-- <div class="into-container"> -->
+                    <!-- <img src="../img/forgot-password-icon-18350-Windows.ico" alt=""> -->
+                    <div class="fImg">
+
+                        <img src="../img/password.png" alt=""height="100px">
+                    </div>
+                <div class="txt">
+                    <div class="tittle">Reset your password</div>
+                    <!-- <div class="desc">Login to manage your account</div> -->
+                </div>
+                <div class="input-fields">
+                    <div class="pswd name">
+                        <!-- <img src="../img/mail_FILL1_wght200_GRAD0_opsz24.svg" alt="" class="icn">
+                        <input type="text" name="" id="idName" placeholder="Type your Email"> -->
+                        <img src="../img/vpn_key_FILL1_wght300_GRAD0_opsz24.svg" alt="" class="icn">
+                        <input type="password" name="" id="npasword" placeholder="New Password" onfocus="newHideShow()" >
+                        <span id="newShowLink" onclick="showNewPassword()">Show</span>
+                    </div>
+                    <div class="pswd name">
+                        <img src="../img/vpn_key_FILL1_wght300_GRAD0_opsz24.svg" alt="" class="icn" id="cIcon">
+                        <input type="password" name="" id="cpasword" placeholder="Confirm Password"  onfocus="conHideShow()">
+                        <span id="conShowLink" onclick="showConPassword()">Show</span>
+                    </div>
+                </div>
+                <!-- <label class="check">
+                    <input type="checkbox">Remember me
+                    <span class="new-box"></span>
+                  </label> -->
+                  <div class="txt">
+                  <div class="desc" id="war">Minimum 10 characters.Must contain upper and lowercase, numbers, and symbols</div>
+                </div>
+                <div class="btn">
+
+                    <input type="submit" value="Rest my password">
+                </div>
+            <!-- </div> -->
+            </div>
+            <div class="inner2-container">
+                <div class="signup">
+                    <p>Don't have an account? </p>
+                    <a href="../html/createAcc.html" target="_blank">Sign up</a>
+                </div>
+                <!-- <div class="forget">
+                    <a href="">Forget password?</a>
+                </div> -->
+
+            </div>
+
+        </div>
+        <!-- <input type="password" name="" id=""> -->
+    <!-- </div> -->
+    <!-- <img src="/70be58c913aff22c25f0ee1aec138628.webp" alt=""> -->
+        <!-- <img src="/log.png" alt="" height="700px"> -->
+
+        <script>
+            document.getElementById("war").style.width=document.getElementById("npasword").clientWidth+"px";
+            // console.log(document.getElementById("npasword").clientWidth);
+            // document.getElementById("war").style.width="100px"
+            function showNewPassword(){
+                let getPasword=document.getElementById('npasword')
+                if(getPasword.type=="password"){
+                    getPasword.style.paddingRight="50px"
+                    getPasword.style.width="140px"
+                    getPasword.type="text";
+                    // showWord.style.visibility="visible";
+                }
+                else{
+                    getPasword.type="password";
+                    // showWord.style.visibility="hidden";
+                }
+                console.log(getPasword.clientWidth)
+            }
+            function showConPassword(){
+                console.log("oooo");
+                let getPasword=document.getElementById('cpasword')
+
+                // console.log("kkkk");
+                // if(para=="new")
+                // {
+                //     getPasword=document.getElementById('npasword');
+                // }
+                // else{
+                //     getPasword= document.getElementById('cpasword');
+                // }
+
+                if(getPasword.type=="password"){
+                    getPasword.style.paddingRight="50px"
+                    getPasword.style.width="140px"
+                    getPasword.type="text";
+                    // showWord.style.visibility="visible";
+                }
+                else{
+                    getPasword.type="password";
+                    // showWord.style.visibility="hidden";
+                }
+                console.log(getPasword.clientWidth)
+                // console.log("name = ",document.getElementById('idName').clientWidth)
+            }
+            console.log(document.querySelector('input') === document.activeElement)
+
+            function showPass(){
+                // document.getElementById('pasword').style.color="red";
+                // let showWord=document.getElementById('showLink');
+                // showWord.classList.add('show');
+                // showWord.style.visibility="visible";
+                // showWord.style.color="red";
+            }
+            function newHideShow(){
+                let showWord=document.getElementById('newShowLink');
+                let getPasword=document.getElementById('npasword')
+                // console.log("po= ",po);
+                if(getPasword.value==="")
+                {
+                    
+                    showWord.style.visibility="visible";
+                }
+                else{
+                    // showWord.style.visibility="hidden";
+
+                }
+
+            }
+            function conHideShow(){
+                let showWord=document.getElementById('conShowLink');
+                let getPasword=document.getElementById('cpasword')
+                // console.log("po= ",po);
+                if(getPasword.value==="")
+                {
+                    
+                    showWord.style.visibility="visible";
+                }
+                else{
+                    // showWord.style.visibility="hidden";
+
+                }
+
+            }
+        </script>
+
+        
+        <!-- <img src="../e3d41d6f469d76ba3d9ba893d77f535a.webp" alt=""> -->
+</body>
+</html>

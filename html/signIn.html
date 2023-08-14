@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signin.css">
+    <title>sign in</title>
+
+</head>
+<body>
+    <!-- <img src="/log.png" alt="">
+    <img src="/AUTH Login Register screen for Phylum (1).aco" alt=""> -->
+    <!-- <div class="upper-container"> -->
+        <div class="clp"></div>
+        <div class="blar"></div>
+        <div class="back">
+            <a href="">
+                <img src="../img/arrow_back_FILL0_wght200_GRAD200_opsz24.svg" alt="" height="18px" width="18px">
+                <p>Back To Main</p>
+            </a>
+        </div>
+        <div class="container">
+            <div class="inner-container">
+                <!-- <div class="into-container"> -->
+                    <div class="logImg">
+                        <img src="../img/ty31.png" alt="" height="100px">
+                    </div>
+                <div class="txt">
+                    <div class="tittle">Sign in</div>
+                    <div class="desc">Login to manage your account</div>
+                </div>
+                <div class="input-fields">
+                    <div class="name">
+                        <img src="../img/mail_FILL1_wght200_GRAD0_opsz24.svg" alt="" class="icn">
+                        <input type="text" name="" id="idName" placeholder="Type your Email">
+                    </div>
+                    <div class="pswd name">
+                        <img src="../img/vpn_key_FILL1_wght300_GRAD0_opsz24.svg" alt="" class="icn">
+                        <input type="password" name="" id="pasword" placeholder="Type your Password"  onfocus="hideShow()">
+                        <span id="showLink" onclick="showPassword()">Show</span>
+                    </div>
+                </div>
+                <label class="check">
+                    <input type="checkbox">Remember me
+                    <span class="new-box"></span>
+                  </label>
+                <div class="btn">
+
+                    <input type="submit" value="Sign in">
+                </div>
+            <!-- </div> -->
+            </div>
+            <div class="inner2-container">
+                <div class="signup">
+                    <p>Don't have an account? </p>
+                    <a href="../html/createAcc.html" target="_blank">Sign up</a>
+                </div>
+                <div class="forget">
+                    <a href="../html/forget.html" target="_blank">Forget password?</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- <input type="password" name="" id=""> -->
+    <!-- </div> -->
+    <!-- <img src="/70be58c913aff22c25f0ee1aec138628.webp" alt=""> -->
+        <!-- <img src="/log.png" alt="" height="700px"> -->
+
+        <script>
+            let showWord=document.getElementById('showLink');
+            let getPasword=document.getElementById('pasword');
+            function showPassword(){
+
+                if(getPasword.type=="password"){
+                    getPasword.style.paddingRight="50px"
+                    getPasword.style.width="140px"
+                    getPasword.type="text";
+                    // showWord.style.visibility="visible";
+                }
+                else{
+                    getPasword.type="password";
+                    // showWord.style.visibility="hidden";
+                }
+                console.log(getPasword.clientWidth)
+                // console.log("name = ",document.getElementById('idName').clientWidth)
+            }
+            console.log(document.querySelector('input') === document.activeElement)
+
+            function showPass(){
+                // document.getElementById('pasword').style.color="red";
+                // let showWord=document.getElementById('showLink');
+                // showWord.classList.add('show');
+                // showWord.style.visibility="visible";
+                // showWord.style.color="red";
+            }
+            function hideShow(){
+                if(getPasword.value==="")
+                {
+                    
+                    showWord.style.visibility="visible";
+                }
+                else{
+                    // showWord.style.visibility="hidden";
+
+                }
+
+            }
+        </script>
+        <!-- <img src="../e3d41d6f469d76ba3d9ba893d77f535a.webp" alt=""> -->
+</body>
+</html>
